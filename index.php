@@ -30,7 +30,7 @@
     <section id="home" class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <div class="welcome">Welcome Foodie ❤️</div>
+            <div class="welcome">Welcome Foodieee ❤️</div>
             <h1>Welcome to Food Heaven Where <br> Flavor Meets Excellence!</h1>
             <a href="#menu" class="menu-btn">View Menu &#10084;</a>
         </div>

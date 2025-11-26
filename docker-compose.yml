@@ -1,8 +1,9 @@
-version: '3.8'
+version: "3.8"
 
 services:
   web:
     build: .
+    container_name: food_docker-web
     volumes:
       - .:/var/www/html
     expose:
@@ -14,6 +15,7 @@ services:
 
   nginx:
     image: nginx:1.25
+    container_name: food_docker-nginx
     ports:
       - "8082:80"
     volumes:
@@ -26,6 +28,7 @@ services:
 
   db:
     image: mysql:8.0
+    container_name: food_docker-db
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
@@ -39,19 +42,4 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    ports:
-      - "8083:80"
-    environment:
-      PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: rootpass
-    depends_on:
-      - db
-    networks:
-      - app-network
-
-volumes:
-  dbdata:
-
-networks:
-  app-network:
-    driver: bridge
+    co

@@ -1,0 +1,29 @@
+name: Deploy to Docker
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, laptop my]
+
+    steps:
+      - name: Test version
+        run: echo "VERSION 3"
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Docker info
+        run: docker info
+
+      - name: Stop existing containers
+        run: docker compose down || true
+
+      - name: Build images
+        run: docker compose build --no-cache
+
+      - name: Start containers
+        run: docker compose up -d

@@ -405,7 +405,11 @@
                             </div>
                         </div>
                         <div class="recipe-content">
+<<<<<<< HEAD
                             <span class="recipe-category">main ressep</span>
+=======
+                            <span class="recipe-category">Main</span>
+>>>>>>> 6329ee2e1f5c87978477b458ef69e5856366e0e5
                             <h3 class="recipe-title">Creamy Mushroom Pasta</h3>
                             <p class="recipe-description">Rich and creamy pasta with sautéed mushrooms and fresh herbs.</p>
                             <div class="recipe-servings">

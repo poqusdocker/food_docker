@@ -1,0 +1,6 @@
+actions-runner/
+git-filter-repo
+*.tar.gz
+*.node
+*.bin
+

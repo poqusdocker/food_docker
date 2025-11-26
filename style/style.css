@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: transparent; 
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.navbar ul li a:hover {
+    color: #ff5733;
+    transform: scale(1.1);}
+
+.contact {
+    background: #f5deb3;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    /* border: solid white 1px; */
+    margin-right: 15px;
+    display: flex;
+}
+
+.contact a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hero {
+    position: relative;
+    background: url("https://img.freepik.com/free-photo/view-people-attending-chinese-new-year-reunion-dinner_23-2151040708.jpg?t=st=1742522363~exp=1742525963~hmac=cb3dfb372cb05cc1be6b62cb866eded10a2ec471e457bd9c94e77c04076cd7b9&w=1380") no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-left: 20px; 
+    height: 100vh;
+    color: white;
+    padding-left: 7%;
+    font-family: "Libre Baskerville", serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.hero-content a {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hero-content a:hover {
+    background-color: white;
+    color: #000;
+    transition: 1s;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    opacity: 0.8;
+    border: solid 1px white;
+}
+
+
+h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.menu-section {
+    background: #f8efe3;
+    padding: 90px 10%;
+    text-align: start;
+}
+
+.flex-section {
+    display: flex;
+}
+
+.image-menu{
+    background-color: #222;
+    background-size: cover;
+    width: 27%;
+    height: 400px;
+    margin-right: 20px;
+    z-index: 1000;
+    background-image: url('https://plus.unsplash.com/premium_photo-1675865382301-5b0dfcc8772d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.menu-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-text h2 {
+    font-size: 40px;
+    color: #3e2c20;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-text p {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #5a4636;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    max-width: 150rem;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    margin: 20px;
+}
+
+.menu-item img {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);
+}
+
+.menu-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu-button a {
+    background-color: transparent;
+    font-size: 15px;
+    padding: 12px 20px;
+    border: solid 2px #3e2c20;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-button :hover {
+    background: #3e2c20;
+    color: white;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .menu-text h2 {
+        font-size: 24px;
+    }
+
+    .image-menu {
+        width: 0;
+    }
+
+    .menu-text p {
+        font-size: 16px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        margin-left: 0;
+    }
+
+    .menu-button button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .menu-text {
+        padding: 0 15px;
+    }
+
+    .image-menu {
+        width: 0;
+    }
+
+    .menu-text h2 {
+        font-size: 20px;
+    }
+
+    .menu-text p {
+        font-size: 14px;
+    }
+
+    .menu-grid {
+        gap: 10px;
+    }
+
+    .menu-button button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* About Us */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFFDFB;
+}
+
+.container {
+    display: flex;
+    width: auto;
+    height: 100vh; 
+    width: 100%;
+}
+
+.image-section {
+    flex: 1;
+    background-image:url('https://img.freepik.com/free-photo/thai-food-spicy-chicken-tendon-soup_1150-45532.jpg?t=st=1742720595~exp=1742724195~hmac=003154fcccc160d8fd661303e8bcd84a110d2e541993036dbac68f4734e9aca4&w=1380');
+    background-size: cover;
+    
+}
+
+
+
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    background: #ffffff;
+    width: 35%;
+    
+}
+
+.text-section h1 {
+    font-size: 42px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-section button {
+    background-color: transparent;
+    color: black;
+    padding: 14px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.text-section button:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Responsive About */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        height: 50vh;
+        flex: none;
+        width: 100%;
+    }
+
+    .text-section {
+        flex: none;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #f8efe3;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    /* margin-top: 50px; */
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+.footer-description {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #000;
+    padding-top: 25px;
+}
+
+.footer-logo {
+    font-size: 24px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #000;
+    margin-left: 160px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+}
+
+.footer-social img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+
+/* Menu CSS */
+
+
+

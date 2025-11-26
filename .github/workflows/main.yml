@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: faiq-project    
+    runs-on: self-hosted Linux X64 faiq-project    
 
     steps:
       - name: Test version

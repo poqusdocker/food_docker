@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">&#9679; FoodRecipeeee</div>
+            <div class="logo">&#9679; FoodRecipeeee /div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -30,7 +30,7 @@
     <section id="home" class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
-            <div class="welcome">Welcome Foodieee ❤️</div>
+            <div class="welcome">Welcome Foodieee brayy ❤️</div>
             <h1>Welcome to Food Heaven Where <br> Flavor Meets Excellence!</h1>
             <a href="#menu" class="menu-btn">View Menu &#10084;</a>
         </div>

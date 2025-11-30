@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">&#9679; FoodRecipeeee /div>
+            <div class="logo">&#9679; FoodRecipeeee </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>

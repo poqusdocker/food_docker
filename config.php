@@ -1,8 +1,10 @@
+
+
 <?php
 $host = "db";
 $user = "root";
 $pass = "rootpass";
-$db   = "food_recipe";
+$db   = "food_docker";
 
 $conn = mysqli_connect($host, $user, $pass, $db, 3306);
 

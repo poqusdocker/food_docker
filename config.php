@@ -2,7 +2,7 @@
 $host = "db";
 $user = "root";
 $pass = "rootpass";
-$db   = "food_docker";
+$db   = "food_recipe";
 
 $conn = mysqli_connect($host, $user, $pass, $db, 3306);
 

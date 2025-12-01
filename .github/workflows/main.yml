@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: [self-hosted Linux X64 laptop-my]    
+    runs-on: [self-hosted, Linux, X64, laptop-lek]    
 
     steps:
       - name: Test version

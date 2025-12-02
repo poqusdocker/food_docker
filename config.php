@@ -1,5 +1,3 @@
-
-
 <?php
 $host = "db";
 $user = "root";

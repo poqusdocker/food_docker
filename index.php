@@ -32,7 +32,7 @@
         <div class="hero-content">
             <div class="welcome">Welcome Foodieee brayy ❤️</div>
             <h1>Welcome to Food Heaven Where <br> Flavor Meets Excellence!</h1>
-            <a href="#menu" class="menu-btn">View Menu &#10084;</a>
+            <a href="#menu" class="menu-btn">View Menu main &#10084;</a>
         </div>
     </section>
 
